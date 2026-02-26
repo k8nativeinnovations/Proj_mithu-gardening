@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mithu's Gardening | Wholesale Flower Plants</title>
+  <style>
+    :root{
+      --green:#2e7d32;
+      --light-green:#e8f5e9;
+      --brown:#6d4c41;
+    }
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body{
+      background:#f9fff9;
+      color:#333;
+      line-height:1.6;
+    }
+
+    header{
+      background:linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6');
+      background-size:cover;
+      background-position:center;
+      color:#fff;
+      padding:90px 20px;
+      text-align:center;
+    }
+
+    header h1{
+      font-size:3rem;
+      margin-bottom:10px;
+    }
+
+    header p{
+      font-size:1.2rem;
+    }
+
+    nav{
+      background:var(--green);
+      display:flex;
+      justify-content:center;
+      gap:30px;
+      padding:12px;
+    }
+
+    nav a{
+      color:#fff;
+      text-decoration:none;
+      font-weight:600;
+    }
+
+    nav a:hover{
+      text-decoration:underline;
+    }
+
+    section{
+      padding:60px 20px;
+      max-width:1200px;
+      margin:auto;
+    }
+
+    .section-title{
+      text-align:center;
+      margin-bottom:40px;
+    }
+
+    .section-title h2{
+      color:var(--green);
+      font-size:2.3rem;
+    }
+
+    .products{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+      gap:30px;
+    }
+
+    .card{
+      background:#fff;
+      border-radius:18px;
+      box-shadow:0 10px 25px rgba(0,0,0,0.1);
+      overflow:hidden;
+      transition:transform .3s;
+    }
+
+    .card:hover{
+      transform:translateY(-6px);
+    }
+
+    .card img{
+      width:100%;
+      height:220px;
+      object-fit:cover;
+    }
+
+    .card-content{
+      padding:20px;
+    }
+
+    .card-content h3{
+      color:var(--brown);
+      margin-bottom:10px;
+    }
+
+    .badge{
+      display:inline-block;
+      background:var(--light-green);
+      color:var(--green);
+      padding:5px 12px;
+      border-radius:20px;
+      font-size:0.85rem;
+      margin-top:10px;
+    }
+
+    .offers{
+      background:var(--light-green);
+      border-radius:20px;
+      padding:40px;
+      text-align:center;
+    }
+
+    .offers h3{
+      color:var(--green);
+      margin-bottom:15px;
+    }
+
+    .contact{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+      gap:30px;
+    }
+
+    .contact-box{
+      background:#fff;
+      padding:30px;
+      border-radius:18px;
+      box-shadow:0 10px 20px rgba(0,0,0,.08);
+    }
+
+    footer{
+      background:var(--green);
+      color:#fff;
+      text-align:center;
+      padding:20px;
+      margin-top:40px;
+    }
+
+    @media(max-width:600px){
+      header h1{font-size:2.2rem;}
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Mithu's Gardening</h1>
+  <p>Wholesale Flower Plants & Natural Gardening Solutions</p>
+</header>
+
+<nav>
+  <a href="#products">Plants</a>
+  <a href="#offers">Offers</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="products">
+  <div class="section-title">
+    <h2>Our Flower Plants</h2>
+    <p>Healthy nursery-grown plants with best quality</p>
+  </div>
+
+  <div class="products">
+    <div class="card">
+      <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTM-HtpqJmrFPsTKTqVsh9OafMl9cdC0jVxvjAOet_wqft16BMRN1xZ_X1Jczv_ZWr4-XglA8jk_UUWL0NEnH_s1bnjtBmQDRhF6id_cgI" alt="Rain Lily">
+      <div class="card-content">
+        <h3>Rain Lily</h3>
+        <p>Beautiful seasonal flowering plant, easy to grow and low maintenance.</p>
+        <span class="badge">Wholesale Available</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://www.gardenpro.co.in/cdn/shop/files/Tablerosebabypink.jpg?v=1724135668" alt="Table Roses">
+      <div class="card-content">
+        <h3>Table Roses</h3>
+        <p>Compact rose varieties perfect for table and home decoration.</p>
+        <span class="badge">Combo Offers</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://casadeamor.in/cdn/shop/articles/flower-gd43a28d24_1920.webp?v=1648710419" alt="Adenium">
+      <div class="card-content">
+        <h3>Adenium</h3>
+        <p>Desert rose with thick trunk and vibrant flowers.</p>
+        <span class="badge">Wholesale Available</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="offers">
+  <div class="offers">
+    <h3>Wholesale & Combo Offers</h3>
+    <p>Special discounts for bulk orders and combo plant packs.</p>
+    <p><strong>Contact us for best pricing!</strong></p>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="section-title">
+    <h2>Contact Us</h2>
+  </div>
+
+  <div class="contact">
+    <div class="contact-box">
+      <h3>Address</h3>
+      <p>T. Deepa<br>
+      No: 1/135, North Street,<br>
+      O. Alangulam - 625022,<br>
+      Madurai, Tamil Nadu</p>
+    </div>
+
+    <div class="contact-box">
+      <h3>Get in Touch</h3>
+      <p><strong>Phone:</strong> 9597540123</p>
+      <p><strong>Email:</strong> mithugardening92@gmail.com</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Mithu's Gardening | Natural Way of Growing</p>
+</footer>
+
+</body>
+</html>
